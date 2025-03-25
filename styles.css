@@ -90,6 +90,12 @@
       display: flex;
       align-items: flex-start;
     }
+
+    /* Added to force a space after the ":" */
+    .preparation-time strong::after {
+        content: " ";
+        white-space: pre;
+      }
     
     .preparation-time li::before {
       content: "•";
